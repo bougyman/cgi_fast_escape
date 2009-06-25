@@ -1,3 +1,7 @@
+# Copyright (c) 2008-2009 The Rubyists, LLC (effortless systems) <rubyists@rubyists.com>
+# Distributed under the terms of the MIT license.
+# See the LICENSE file which accompanies this software for the full text
+#
 begin; require 'rubygems'; rescue LoadError; end
 
 require 'rake'
@@ -5,7 +9,6 @@ require 'rake/clean'
 require 'rake/gempackagetask'
 require 'time'
 require 'date'
-require "lib/cgi_fast_escape"
 
 PROJECT_SPECS = FileList[
   'spec/*/**/*.rb'
@@ -68,6 +71,8 @@ GEMSPEC = Gem::Specification.new{|s|
   s.version      = PROJECT_VERSION
   s.files        = PROJECT_FILES
   s.require_path = "lib"
+  s.add_dependency "url_escape"
+  s.rubyforge_project = "url-escape"
   
 
   s.post_install_message = <<MESSAGE

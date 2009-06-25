@@ -1,0 +1,12 @@
+[5707c73 | 2009-06-23 00:56:29 UTC] bougyman <bougyman@gotdebt.nationwide-recovery.com>
+
+  * added url_escape dependency
+
+[7de79ee | 2009-06-22 22:41:28 UTC] TJ Vanderpoel <Jayson Vaughn jv@rubyists.com>
+
+  * updated README
+
+[6211693 | 2009-06-22 22:40:13 UTC] TJ Vanderpoel <Jayson Vaughn jv@rubyists.com>
+
+  * initial port from rack_fast_escape
+
